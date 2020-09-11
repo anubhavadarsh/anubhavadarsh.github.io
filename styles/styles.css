@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    background: #f5d9d5;
+    font-family: 'Nunito', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+/* nav */
+#mainNavbar {
+    padding-top: 0;
+    position: sticky;
+    top: 0;
+}
+
+#mainNavbar * {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #ea1c2c;
+}
+
+#mainNavbar .navbar-brand {
+   color: #ea1c2c; 
+}
+
+#menu {
+    background-image: url(../assets/menu.svg);
+    background-size: 16px 16px;
+}
+.navbar.scrolled {
+    background: #62b6cb;
+    padding-bottom: 0;
+}
+/* grid */
+section img {
+    max-width: 100%;
+    height: auto;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+}
+
+main section.grid-text {
+    padding: 25%;
+    text-align: center;
+    color: #ea1c2c;
+}
+main section.grid-text p{
+    color: #fa6abb;
+    line-height: 2;
+}
+
+main section.grid-text:nth-of-type(1) {
+    padding: 20%;
+    color: white;
+}
+
+span.f-slash {
+    color: #ea1c2c;
+    font-size: 2.2rem;
+    font-weight: 200;
+}
+
+div.logo {
+    height: 48px;
+    background: url(../assets/lollipop.svg) no-repeat center center;
+    background-size: 48px 48px;
+    margin-bottom: 0.75rem;
+}
+
+/* breakpoint at 750px*/
+@media screen and (max-width: 750px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    main section.grid-text:nth-of-type(1){
+        display: none;
+    }
+    section.one   {order: 1;}
+    section.two   {order: 2;}
+    section.three {order: 3;}
+    section.four  {order: 4;}
+    section.five  {order: 5;}
+    section.six   {order: 6;}
+    section.seven {order: 7;}
+}
+/* breakpoint between 750px and 1140px */
+@media screen and (min-width: 750px) and (max-width: 1140px) {
+    main section.grid-text {
+        padding: 2% !important; 
+    }
+}
