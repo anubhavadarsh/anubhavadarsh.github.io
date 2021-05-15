@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Museum Of Candy</title>
+</head> 
+<body>
+    <nav class="navbar">
+        <a href="#/" class="navbar-brand">candy</a>
+        <div class="border-collapse">
+            <ul>
+                <li><a href="#/">home</a></li>
+                <li><a href="#/">about</a></li>
+                <li><a href="#/">tickets</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <main>
+        <section class="typography">
+            <h2>museum<span class="forward-slash">/</span>of<span class="forward-slash">/</span>candy</h2>
+            <h2>museum<span class="forward-slash">/</span>of<span class="forward-slash">/</span>candy</h2>
+            <h2>museum<span class="forward-slash">/</span>of<span class="forward-slash">/</span>candy</h2>
+            <h2>museum<span class="forward-slash">/</span>of<span class="forward-slash">/</span>candy</h2>
+            <h2>museum<span class="forward-slash">/</span>of<span class="forward-slash">/</span>candy</h2>
+            <h2>museum<span class="forward-slash">/</span>of<span class="forward-slash">/</span>candy</h2>
+            <h2>museum<span class="forward-slash">/</span>of<span class="forward-slash">/</span>candy</h2>
+        </section>
+        <section>
+            <img src="assets/hand2.png" alt="hand holding a donut">
+        </section>
+        <section id="image-2">
+            <img src="assets/milk.png" alt="milk with donut">
+        </section>
+        <section class="typography">
+            <div class="compartment">
+                <h2>museum of candy</h2>
+                <span><img src="assets/lollipop.svg" alt=""></span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas excepturi eligendi maiores labore veritatis quaerat consectetur quos recusandae fuga, similique harum architecto magnam possimus. Repellat tenetur laborum dignissimos. Quis, debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad enim quasi, commodi id quaerat minus maxime cupiditate placeat dicta harum soluta ratione animi, eaque deleniti provident non culpa excepturi dolor voluptatum fuga delectus neque similique. Ab nihil hic quasi quibusdam?</p>
+            </div>
+        </section>
+        <section class="typography">
+            <div class="compartment">
+                <h2>museum of candy</h2>
+                <span><img src="assets/lollipop.svg" alt=""></span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas excepturi eligendi maiores labore veritatis quaerat consectetur quos recusandae fuga, similique harum architecto magnam possimus. Repellat tenetur laborum dignissimos. Quis, debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad enim quasi, commodi id quaerat minus maxime cupiditate placeat dicta harum soluta ratione animi, eaque deleniti provident non culpa excepturi dolor voluptatum fuga delectus neque similique. Ab nihil hic quasi quibusdam?</p>
+            </div>
+        </section>
+        <section>
+            <img src="assets/gumball.png" alt="">
+        </section>
+        <section id="image-last">
+            <img src="assets/sprinkles.png" alt="">
+        </section>
+        <section class="typography">
+            <div class="compartment">
+                <h2>museum of candy</h2>
+                <span><img src="assets/lollipop.svg" alt=""></span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas excepturi eligendi maiores labore veritatis quaerat consectetur quos recusandae fuga, similique harum architecto magnam possimus. Repellat tenetur laborum dignissimos. Quis, debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad enim quasi, commodi id quaerat minus maxime cupiditate placeat dicta harum soluta ratione animi, eaque deleniti provident non culpa excepturi dolor voluptatum fuga delectus neque similique. Ab nihil hic quasi quibusdam?</p>
+            </div>
+        </section>
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("nav.navbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+</html>
